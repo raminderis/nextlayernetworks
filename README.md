@@ -37,6 +37,6 @@ If using a larger repository, set the Render root directory to this project fold
 
 ## Before public launch
 
-The sourcing dialog currently downloads a text brief locally. It does not send inquiries or store customer data. Connect a real business email or form endpoint before launch. The business name is provisional; domain and trademark availability have not been cleared. Product artwork is illustrative. No supplier authorization, stock availability, or customer relationships are claimed. Google Fonts is an external optional font dependency; system-font fallbacks are configured.
+The quote inquiry dialog submits to Formspree at `https://formspree.io/f/mvkkblrn`. Configure and verify the notification recipient in the Formspree dashboard (intended mailbox: `support@nextlayernetworks.com`). Customers provide their name, reply email, company/project, category, and requirements. Formspree processes submissions; this static site has no database or email credentials. Verify a real submission arrives before launch. A successful API response confirms submission, not inbox delivery. The business name is provisional; domain and trademark availability have not been cleared. Product artwork is illustrative. No supplier authorization, stock availability, or customer relationships are claimed. Google Fonts is an external optional font dependency; system-font fallbacks are configured.
 
 No credentials are included. `node_modules` and `dist` are generated and excluded from the source ZIP. Keep `package-lock.json` for reproducible installs.
