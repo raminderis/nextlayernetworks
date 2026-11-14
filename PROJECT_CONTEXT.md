@@ -4,7 +4,7 @@ Last updated: 2026-10-31 (Asia/Kolkata).
 
 ## Application
 
-- Next Layer Network: a concept website for AI infrastructure cabling sourcing.
+- Next Layer Networks: a concept website for AI infrastructure cabling sourcing.
 - React 19 + Vite 7; source is primarily `src/main.jsx` and `src/style.css`.
 - `index.html` contains the title and metadata. `README.md` describes setup and launch limitations.
 - The quote inquiry dialog now submits through Formspree, using the endpoint supplied by the user: `https://formspree.io/f/mvkkblrn`. Email delivery and recipient configuration have not been verified.

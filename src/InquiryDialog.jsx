@@ -66,7 +66,7 @@ export default function InquiryDialog({initialCategory, onClose}) {
     {status === 'success' ? <button className="lime-btn" type="button" onClick={close}>Done</button> : <>
       <p>Tell us what you need and how to reach you. Your details will be sent through Formspree to our team for a response.</p>
       <form action={FORM_ENDPOINT} method="POST" onSubmit={submit} aria-busy={sending}>
-        <input type="hidden" name="_subject" value="Next Layer Network — quote inquiry"/>
+        <input type="hidden" name="_subject" value="Next Layer Networks — quote inquiry"/>
         <div className="form-trap" aria-hidden="true"><label>Leave this field empty<input name="_gotcha" tabIndex={-1} autoComplete="off"/></label></div>
         <fieldset disabled={sending}>
           <label>Your name<input name="name" required autoComplete="name" maxLength={150} autoFocus/></label>

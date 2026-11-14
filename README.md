@@ -10,7 +10,7 @@ Open this folder as a local project in Codex. Source files:
 - `index.html`: page title and metadata.
 
 Suggested first prompt:
-> Continue developing this React + Vite website. Read README.md first. Preserve the Next Layer Network brand and focus on cabling sourcing for AI infrastructure. Start the local preview and inspect the current site before editing. Keep the app deployable as a Render Static Site. Do not invent customers, inventory, supplier partnerships, or certifications.
+> Continue developing this React + Vite website. Read README.md first. Preserve the Next Layer Networks brand and focus on cabling sourcing for AI infrastructure. Start the local preview and inspect the current site before editing. Keep the app deployable as a Render Static Site. Do not invent customers, inventory, supplier partnerships, or certifications.
 
 ## Run locally
 
