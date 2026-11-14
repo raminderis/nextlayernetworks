@@ -1,4 +1,4 @@
-# Next Layer Network
+# Next Layer Networks
 
 React + Vite website for an AI infrastructure cabling sourcing business.
 
