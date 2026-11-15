@@ -40,3 +40,11 @@ If using a larger repository, set the Render root directory to this project fold
 The quote inquiry dialog submits to Formspree at `https://formspree.io/f/mvkkblrn`. Configure and verify the notification recipient in the Formspree dashboard (intended mailbox: `support@nextlayernetworks.com`). Customers provide their name, reply email, company/project, category, and requirements. Formspree processes submissions; this static site has no database or email credentials. Verify a real submission arrives before launch. A successful API response confirms submission, not inbox delivery. The business name is provisional; domain and trademark availability have not been cleared. Product artwork is illustrative. No supplier authorization, stock availability, or customer relationships are claimed. Google Fonts is an external optional font dependency; system-font fallbacks are configured.
 
 No credentials are included. `node_modules` and `dist` are generated and excluded from the source ZIP. Keep `package-lock.json` for reproducible installs.
+
+## LC quote builder
+
+The LC product card links to `/lc-builder.html`. Buyers configure an LC-ended
+assembly and continue to the existing inquiry dialog with an editable specification
+summary. APC is excluded for multimode selections; uniboot is offered only for
+LC-to-LC duplex. All selections are requests subject to quotation review, not stock
+or compatibility guarantees. No pricing, payment, or order acceptance is provided.

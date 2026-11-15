@@ -2,7 +2,7 @@ import React, {useEffect, useRef, useState} from 'react';
 
 export const FORM_ENDPOINT = 'https://formspree.io/f/mvkkblrn';
 
-export default function InquiryDialog({initialCategory, onClose, inline=false}) {
+export default function InquiryDialog({initialCategory, initialMessage="", onClose, inline=false}) {
   const dialogRef = useRef(null);
   const sendingRef = useRef(false);
   const [status, setStatus] = useState('idle');
@@ -73,11 +73,12 @@ export default function InquiryDialog({initialCategory, onClose, inline=false}) 
         <fieldset disabled={sending}>
           <label>Your name<input name="name" required autoComplete="name" maxLength={150} autoFocus={!inline}/></label>
           <label>Email address<input name="email" type="email" required autoComplete="email" maxLength={254}/></label>
+          <label>Phone number<input name="phone" type="tel" required autoComplete="tel" maxLength={50} placeholder="Include country code, e.g. +1 202 555 0123"/></label>
           <label>Company / project<input name="company" required autoComplete="organization" maxLength={200}/></label>
           <label>What are you sourcing?<select name="category" defaultValue={initialCategory}>
             <option>Fiber assemblies</option><option>High-speed copper</option><option>Cabling essentials</option><option>Mixed requirement</option>
           </select></label>
-          <label>{inline ? "Your message" : "Specifications, quantities & delivery"}<textarea name="message" required maxLength={10000} placeholder="Part numbers, lengths, quantities, destination, target date…"/></label>
+          <label>{inline ? "Your message" : "Specifications, quantities & delivery"}<textarea name="message" defaultValue={initialMessage} required maxLength={10000} placeholder="Part numbers, lengths, quantities, destination, target date…"/></label>
           <button className="lime-btn" type="submit">{sending ? 'Sending…' : 'Send inquiry ↗'}</button>
         </fieldset>
         <p className="status" role={status === 'error' ? 'alert' : 'status'}>{status === 'error' ? error : sending ? 'Sending your inquiry. Please keep this window open.' : ''}</p>
